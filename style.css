@@ -1,0 +1,291 @@
+nav{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed !important;
+    width: 100%;
+    z-index: 999;
+}
+#navbarSupportedContent{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./image/back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+#home img{
+    width: 30%;
+    margin-top: 10%;
+    margin-left: 10%;
+    border-radius: 100%;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+}
+.home-content{
+    margin-left: 40%;
+    margin-top: -20%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    letter-spacing: .2em;
+}
+.home-content h2{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: bold;
+   text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.home-content span{
+    padding: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.home-content button{
+    margin-top: 10px;
+    width: 20%;
+    outline: none !important;
+    border: none;
+    padding: 10px;
+    background-color: orangered;
+    border-radius: 10px 0px;
+}
+.home-content button:hover{
+    background-color: black;
+    transition: .2s ease-in-out;
+    color: white;
+    border-radius: 10px;
+}
+section{
+    width: 100%;
+    height: max-content;
+}
+#process{
+    text-align: center;
+    background-color: sandybrown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#process img{
+    width: 30%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+#process h1{
+    padding: 20px;
+}
+#process p{
+    width: 70%;
+    text-align: center;
+    padding: 2%;
+    margin-left: 15%;
+    font-weight: bold;
+}
+#process h2{
+    padding-top: 30px;
+}
+#md{
+    width: 100%;
+    height: max-content;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+#md img{
+    width: 20%;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+}
+#letter{
+    width: 80%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+#letter .fo{
+    width: 70%;
+}
+.fo input{
+    width: 30% !important;
+    margin-left: 60%;
+}
+.foot{
+    width: 100%;
+    height: max-content;
+    background-color: black;
+    color: white;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.foot .detail{
+    margin-left: 7%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#process img {
+    transition: 1s ease;
+}
+#process img:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+}
+@media screen and (max-width: 1025px){
+    #home{
+        padding-top: 10%;
+    }
+    #home .home-content{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 13px;
+    }
+    #home .home-content h2{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+    }
+    #process img{
+        width: 50%;
+    }
+    #letter .fo{
+        display: flex;
+        width: 100%;
+        height: 10%;
+        margin-top: 3%;
+        margin-right: 50px;
+    }
+    .fo input{
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width: 769px) {
+    #home{
+        padding-top: 15%;
+    }
+    #home .home-content{
+        margin-top: -25%;
+    }
+    .home-content h2{
+        font-family: 'Times New Roman', Times, serif;   
+    }
+    .title{
+        font-size: 12px;
+    }
+    .title h4{
+        font-size: 17px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #process img{
+        width: 70%;
+    }
+    #process h1,h2{
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .foot .detail{
+        font-size: 13px;
+    }
+    #md img{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 426px) {
+    #home{
+        height: max-content;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    #home img{
+        width: 70%;
+        margin-left: 15%;
+    }
+    #home .home-content{
+        margin-top: 20px;
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 20px;
+        background-color: bisque;
+        padding-top: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    #letter{
+        width: 100%;
+        height: 30vh;
+        margin-left: -1px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    #letter .title{
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+    #letter .title h4{
+        font-size: 25px;
+    }
+    #letter .fo{
+        width: 100%;
+        margin-left: -35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fo input{
+        width: 80% !important;
+        margin-top: 50px;
+        margin-left: 70%;
+        text-align: center;
+    }
+    .fo button{
+        width: 40%;
+        margin-right: -70%;
+        margin-top: 10px;
+    }
+    #home button{
+        width: 100%;
+        font-size: 15px;
+    }
+    #process img{
+        width: 90%;
+    }
+    #process p{
+        font-size: 13px;
+    }
+    .foot .detail h4{
+        font-size: 18px;
+    }
+    #md img {
+        width: 50%;
+    }
+    #md h2{
+
+        font-size: 25px;
+    }
+    .foot{
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+    .foot .quick{
+        margin-left: 20px;
+    }
+}
